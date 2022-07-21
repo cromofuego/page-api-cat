@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/page-api-cat/static/css/main.4e4f5b28.css",
+    "main.js": "/page-api-cat/static/js/main.5611e52a.js",
+    "index.html": "/page-api-cat/index.html",
+    "main.4e4f5b28.css.map": "/page-api-cat/static/css/main.4e4f5b28.css.map",
+    "main.5611e52a.js.map": "/page-api-cat/static/js/main.5611e52a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e4f5b28.css",
+    "static/js/main.5611e52a.js"
+  ]
+}
