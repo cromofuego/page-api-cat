@@ -1,0 +1,35 @@
+.container {
+    margin-top: 100px;
+}
+.p-1, .p-2 {
+    font-size: 90px;
+}
+.p-3  {
+    font-size: 30px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+@media (min-width: 992px) {
+
+    .container {
+        margin-top: 0px;
+    }
+    .p-1, .p-2 {
+        font-size: 180px;
+    }
+    .p-3  {
+        font-size: 110px;
+    }
+    
+    img {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+    }
+    
+}
