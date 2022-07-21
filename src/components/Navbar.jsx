@@ -10,7 +10,7 @@ function Navbar() {
           <div className='col p-0'>
             <nav className="navbar navbar-expand-lg bg-light">
               <div className="container-fluid">
-                <NavLink className="navbar-brand" to="/">
+                <NavLink className="navbar-brand" to="/page-api-cat/">
                   Cat Home
                 </NavLink>
                 <button 

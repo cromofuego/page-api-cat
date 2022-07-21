@@ -42,7 +42,7 @@ function RandomCard() {
             {!loadingRadnomCats &&
               randomCat.map(cat => {
                 return (
-                  <div className="col-12 col-md-6 col-lg-4 col-xl-4 px-5 d-flex justify-content-center" key={`random cats ${cat.id}`}>
+                  <div className="col-12 col-md-6 col-lg-4 d-flex  justify-content-center" key={`random cats ${cat.id}`}>
                     <div className="card mb-4" >
                       <img src={cat.url} className="card-img card-img-top" alt="imagen de un gato" />
                       <div className="card-body d-flex justify-content-center"> 
