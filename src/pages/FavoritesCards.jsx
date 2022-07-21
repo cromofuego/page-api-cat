@@ -16,7 +16,6 @@ function FavoritesCards() {
             <section className='section-favorite'>
                 <div className="container d-flex flex-column flex-wrap justify-content-center my-4" >
 
-
                     {favoriteCats.length > 0 ?
                         <div className='col-12 mb-4'>
                             <h1 className='text-center'>
@@ -28,15 +27,14 @@ function FavoritesCards() {
                             <h1 className='text-center'>
                                 Add a new cat that you love it!
                             </h1>
-                        </div>
-                    }
+                        </div>}
 
                     <div className="row">
                         {!loadingFavoriteCat &&
                             favoriteCats.map(cat => {
                                 return (
                                     <div
-                                        className="col-12 col-md-6 col-lg-4 px-5 d-flex  justify-content-center"
+                                        className="col-12 col-md-6 col-lg-4 d-flex  justify-content-center"
                                         key={`favorite cat ${cat.image.id}`}
                                     >
                                         <div className="card mb-4" >

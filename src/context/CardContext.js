@@ -13,7 +13,6 @@ function CardProvider(props) {
   const [favoriteCats, setFavoriteCats] = useState([]);
   const [loadingFavoriteCat, setLoadingFavoriteCat] = useState(true);
 
-
   async function showAllFavoritesCats() {
     fetch(URL_GET_FAVORITE_CAT, {
       method: 'GET',
@@ -27,6 +26,7 @@ function CardProvider(props) {
         setLoadingFavoriteCat(false)
       })
       .catch((error) => {
+        setLoadingFavoriteCat(false)
         console.error(error);
       });
   }
@@ -94,17 +94,19 @@ function CardProvider(props) {
   }), [])
   // </ Random Card >  
 
+  // < Verification >
   const verificationNotRepeatFavoriteCat = (id) => {
+    if (loadingFavoriteCat) return
+    showAllFavoritesCats()
+    setLoadingFavoriteCat(true)
     const index = favoriteCats.findIndex(item => item.image_id === id)
-    console.log(favoriteCats)
-    console.log(index)
     if (index >= 0) {
       alert('Ya ha sido agregado');
     } else {
       addFavoriteCat(id)
     }
   }
-  console.log(favoriteCats)
+  // </ Verification >
 
   return (
     <CardContext.Provider value={{

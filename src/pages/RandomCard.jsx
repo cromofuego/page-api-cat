@@ -1,8 +1,7 @@
 import '../styles/RandomCard.css';
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { CardContext } from '../context/CardContext';
 import '../styles/Footer.css';
-
 
 function RandomCard() {
 
@@ -12,7 +11,6 @@ function RandomCard() {
     randomCat,
     verificationNotRepeatFavoriteCat,
   } = useContext(CardContext);
-
 
   return (
     <React.Fragment>
