@@ -11,7 +11,7 @@ function AppUI() {
             <HashRouter>
                 <Navbar />
                 <Routes>
-                    <Route path='/page-api-cat/' element={<RandomCard />} />
+                    <Route path='/' element={<RandomCard />} />
                     <Route path='/favorites' element={<FavoritesCards />} />
                     <Route path='/*' element={<NotFound />} />
                 </Routes>
